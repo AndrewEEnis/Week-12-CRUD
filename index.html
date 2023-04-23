@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikes App</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <img
+      src="https://www.kindpng.com/picc/m/495-4956684_banner-image-road-bicycle-hd-png-download.png"
+      alt="Banner-image - Road Bicycle, HD Png Download@kindpng.com"
+      width="100%"
+    />
+    <form>
+      <h4>New Bike Entry Form</h4>
+      <div>
+        <label for="bikeModel">Bike Model:</label>
+        <input id="bikeModel" placeholder="Enter Bike Model" />
+      </div>
+      <div>
+        <label for="bikeCategory">Bike Category:</label>
+        <input id="bikeCategory" placeholder="Enter Bike Category" />
+      </div>
+      <div>
+        <label for="bikeManufacturer">Bike Manufacturer:</label>
+        <input id="bikeManufacturer" placeholder="Enter Bike Manufacturer" />
+      </div>
+      <button id="submitBike">Submit New Bike</button>
+    </form>
+    <br />
+    <br />
+    <form>
+      <h3>Update Bike Information</h3>
+      <div>
+        <label for="updateID">Bike ID</label>
+        <input id="updateID" placeholder="Bike ID" />
+      </div>
+      <div>
+        <label for="updateModel">Bike Model</label>
+        <input id="updateModel" placeholder="Bike Model" />
+      </div>
+      <div>
+        <label for="updateCategory">Bike Category</label>
+        <input id="updateCategory" placeholder="Bike Category" />
+      </div>
+      <div>
+        <label for="updateManufacturer">Bike Manufacturer</label>
+        <input id="updateManufacturer" placeholder="Bike Manufacturer" />
+      </div>
+      <button id="submitChanges">Submit Changes to Bike</button>
+    </form>
+    <br />
+    <br />
+    <table>
+      <thead>
+        <th>Bike ID:</th>
+        <th>Bike Model:</th>
+        <th>Bike Category:</th>
+        <th>Bike Manufacturer:</th>
+        <th>Delete Bike</th>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="bikes.js"></script>
+  </body>
+</html>
